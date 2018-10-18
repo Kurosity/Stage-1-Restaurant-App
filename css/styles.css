@@ -21,10 +21,15 @@ a {
 	color: orange;
 	text-decoration: none;
 }
-a:hover, a:focus {
+a:hover, a:focus, select:hover, select:focus{
 	color: #3397db;
 	text-decoration: none;
 }
+
+#restaurants-list a:hover, #restaurants-list a:focus{
+	background: #3397db;
+}
+
 a img{
 	border: none 0px #fff;
 }
