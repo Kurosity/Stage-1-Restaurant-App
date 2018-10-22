@@ -376,9 +376,14 @@ nav h1 a {
         margin: auto;
         font-size: 1em;
     }
+
     .inside header{
         width: 90%;
         margin: auto;
+    }
+
+    #maincontentrestaurant{
+        flex-grow: 1;
     }
 
     #restaurant-pic{
@@ -387,7 +392,7 @@ nav h1 a {
     }
 
     .inside nav{
-        max-width: 1020px;
+        max-width: inherit;
     }
 
     #breadcrumb{
@@ -406,9 +411,27 @@ nav h1 a {
         font-size: 15px;
     }
 
+    #reviews-list{
+        margin: auto;
+    }
+
+    #reviews-container{
+        max-width: 1020px;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin: auto;
+    }
+
+    #footer{
+        left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: inherit;
+    }
+
 }
 
-@media screen and (min-width: 0px) and (max-width: 360px){
+@media screen and (min-width: 300px) and (max-width: 360px){
     .inside, .indexbodycontent, .inside header, #breadcrumb{
         max-width: 360px;
         margin: auto;
@@ -419,7 +442,11 @@ nav h1 a {
     }
 
     .inside nav{
-        max-width: 360px;
+        max-width: inherit;
+    }
+
+    nav h1{
+        max-width: 300px;
     }
 
     #breadcrumb{
@@ -447,11 +474,14 @@ nav h1 a {
     #reviews-container{
         max-width: 300px;
         padding-right: 0px;
+        padding-left: 0px;
+        margin: auto;
     }
 
     #footer{
         left: 0px;
         padding-left: 0px;
         padding-right: 0px;
+        max-width: inherit;
     }
 }
